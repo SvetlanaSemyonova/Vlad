@@ -32,7 +32,6 @@ namespace DefaultNamespace
             {
                 price = price * 0.2f;
             }
-
             return price;
         }
 

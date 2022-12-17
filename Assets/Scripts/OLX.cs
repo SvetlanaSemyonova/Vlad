@@ -31,6 +31,7 @@ namespace DefaultNamespace
 
             var horse1PriceOnSite = Horse1.SalePrice();
             var porschePriceOnSite = Porsche.SalePrice();
+            
         }
     }
 }
