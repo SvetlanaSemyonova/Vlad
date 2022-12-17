@@ -12,7 +12,8 @@ namespace DefaultNamespace
                 age = 10,
                 country = "Italy",
                 isCar = true,
-                hp = 5.2,
+                hp = 5.2f,
+                price = 10900.50,
             };
             
             var Horse1 = new Vehicle
@@ -22,10 +23,14 @@ namespace DefaultNamespace
                 country = "Poland",
                 hp = .9f,
                 isCar = false,
+                price = 1499.99,
             };
 
-            var horse1LeftForSale = Horse1.daysLeftForSell();
-            var PorscheLeftForSale = Porsche.daysLeftForSell();
+            var horse1LeftForSale = Horse1.DaysLeftForSell();
+            var porscheLeftForSale = Porsche.DaysLeftForSell();
+
+            var horse1PriceOnSite = Horse1.SalePrice();
+            var porschePriceOnSite = Porsche.SalePrice();
         }
     }
 }
