@@ -6,15 +6,26 @@ namespace DefaultNamespace
 {
     public class Burner : MonoBehaviour
     {
-        public void OnTriggerEnter(Collider other)
+        [SerializeField] private GameObject Trash;
+
+        private void FixedUpdate()
         {
-            if (GameObject.FindWithTag("Player"))
-            {
-                Destroy(GameObject.FindWithTag("Player"));
-            }
         }
 
-
+        /*private void Respawn()
+        {
+            if (Trash.activeInHierarchy == false)
+            {
+                Trash.SetActive(true); 
+            }
+            else
+            {
+                return;
+            }
+        }*/
+        
+        
+      
     }        
     
 
